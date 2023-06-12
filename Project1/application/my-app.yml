@@ -4,7 +4,8 @@ metadata:
   name: my-app
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: docker.io/ruthvik2424/demoproject:~1
+    argocd-image-updater.argoproj.io/image-list: docker.io/ruthvik2424/demoproject:1.1
+    argocd-image-updater.argoproj.io/write-back-method: git
 spec:
   project: default
   source:
